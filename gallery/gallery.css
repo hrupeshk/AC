@@ -1,0 +1,110 @@
+/* gallery Page Css */
+
+.Potrait {
+  max-width: 90% !important;
+  margin: 20px auto !important;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* width: fit-content; */
+}
+
+.Sub_Potrait {
+    margin: 5px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Sub_Potrait img {
+  width: 120px;
+  height: 80px;
+  border-radius: 10px;
+}
+
+.Sub_Potrait h4 {
+  padding: 10px;
+  margin: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media screen and (min-width: 375px) {
+    .Sub_Potrait img {
+        width: 150px;
+        height: 100px;
+    }
+}
+@media screen and (min-width: 425px) {
+    .Sub_Potrait img {
+        width: 170px;
+        height: 120px;
+    }
+}
+@media screen and (min-width: 768px) {
+
+    .Sub_Potrait {
+        margin: 10px auto;
+    }
+
+    .Sub_Potrait img {
+        width: 200px;
+        height: 150px;
+    }
+
+  .Sub_Potrait h4 {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1024px) {
+    .Sub_Potrait img {
+        width: 220px;
+        height: 170px;
+    }
+
+  .Sub_Potrait h4 {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1440px) {
+    .Sub_Potrait {
+        margin: 15px auto;
+    }
+
+    .Sub_Potrait img {
+        width: 260px;
+        height: 200px;
+    }
+  .Sub_Potrait h4 {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1520px) {
+    .Sub_Potrait img {
+        width: 300px;
+        height: 240px;
+    }
+  .Sub_Potrait h4 {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 2560px) {
+    .Sub_Potrait {
+        margin: 20px auto;
+    }
+    .Sub_Potrait img {
+        width: 400px;
+        height: 300px;
+    }
+  .Sub_Potrait h4 {
+    font-size: 22px;
+  }
+  .title h2 {
+    font-size: 70px;
+    border: 2px solid black;
+    border-radius: 16px;
+    padding: 25px;
+    margin: 20px;
+  }
+}

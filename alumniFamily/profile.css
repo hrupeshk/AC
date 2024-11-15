@@ -1,0 +1,141 @@
+/* profile.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.mainContainer {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.headingContainer {
+    width: 90%;
+    margin: 20px auto;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.cardContainer {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border: 2px solid #a841ac;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+h3 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+/* Media Queries */
+@media (min-width: 375px) {
+    .cardContainer {
+        margin: 30px; 
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .card {
+        max-width: 350px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 425px) {
+    .headingContainer {
+        width: 80%;
+    }
+
+    .card {
+        padding: 20px;
+        margin: 10px 15px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .card {
+        padding: 20px;
+        margin: 15px;
+        width: 45%;
+    }
+    
+    h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .cardContainer {
+        width: 100%;
+        margin: 30px 10px;
+    }
+
+    .card {
+        padding: 20px;
+        margin: 10px;
+        width: 30%; 
+        max-width: 320px; 
+    }
+}
+
+@media (min-width: 1440px) {
+    .card {
+        margin: 10px;
+        width: 25%; 
+    }
+}

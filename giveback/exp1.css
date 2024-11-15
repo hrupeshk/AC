@@ -1,0 +1,244 @@
+/* alumniCard.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    width: 80%;
+    margin: 20px auto !important;
+}
+
+.photo-input {
+    width: 90%;
+    margin: 30px auto;
+}
+.photo-input img{
+    width: 200px;
+    height: 150px;
+}
+
+#submitBtn:disabled {
+    opacity: 0.4;
+    background-color: #000235; /* Light gray background color */
+    color: #aaaaaa; /* Light gray text color */
+    cursor: not-allowed; /* No pointer on hover */
+}
+.Alignment{
+    display: flex;
+    width: 100%;
+}
+.Alignment label{
+    /* padding-top: 15px; */
+    text-align: center;
+    /* padding-right: 50px; */
+}
+.submit{
+    display: flex;
+    padding-left: 50px;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+input:focus::placeholder,
+input:valid::placeholder{
+   /* top: -5px;  */
+   transform: rotateX(90deg);
+   transition: .8s;
+}
+.heading h1 {
+    font-size: 25px;
+    color: black;
+    margin: 10px auto;
+}
+
+.description {
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.inputContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.data-input {
+    width: 90%;
+    margin: 30px auto;
+}
+
+label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 8px;
+    color: black;
+    text-align: left;
+}
+
+input, select {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 12px;
+    padding: 10px;
+    /* margin-bottom: 10px; */
+    transition: border-color 0.3s ease-in-out;
+}
+
+form input:focus, form select:focus {
+    border-color: #469e80;
+    outline: none;
+}
+
+.submit input[type="submit"] {
+    width: 80%;
+    max-width: 400px;
+    margin: 0px auto 30px;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #000235;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.submit input[type="submit"]:hover {
+    background-color: #469e80;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width:320px){
+    .Alignment{
+        flex-direction: column;
+    }
+    .Alignment label{
+        text-align: left;
+        padding-left: 10px;
+        font-weight: 600;
+    }
+    .submit{
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .heading h1 {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+    .Alignment{
+        flex-direction: row;
+    }
+    .Alignment label{
+        text-align: left;
+        margin-top: 15px;
+        width: 100%;
+    }
+    #alumni_id_status{
+        padding-left: 30px;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .data-input {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    label {
+        margin-bottom: 8px;
+        color: black;
+        margin-left: 20px;
+        max-width: 200px;
+        font-size: 16px;
+        display: inline-block;
+        width: 30%; 
+        text-align:left;
+    }
+    
+    input, select {
+        display: inline-block;
+        width: 65%; 
+        text-align: left;
+        box-sizing: border-box; 
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    
+    input[type="file"] {
+        width: 250px; 
+        font-size: 14px;
+    }
+    
+    input[type="file"]:focus {
+        border-color: #3498db;
+        outline: none;
+    }
+    
+    .submit input[type="submit"] {
+        font-size: 18px;
+        width: 40%;
+        margin-top: 20px;
+        height: 50px;
+    }
+    
+    .photo-input div {
+        margin: 10px 40px;
+    }   
+}
+
+@media only screen and (min-width: 1024px) {
+    .heading h1 {
+        font-size: 35px;
+    }
+
+    .inputContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .data-input {
+        max-width: 60%;
+    }
+    .photo-input {
+        max-width: 30%; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input, select {
+        font-size: 16px;
+    }
+    
+}
+
+@media only screen and (min-width: 1440px) {
+    .heading h1 {
+        font-size: 40px;
+    }
+}

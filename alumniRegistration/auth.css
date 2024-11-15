@@ -1,0 +1,149 @@
+/* auth.css */
+
+.authContainer {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto 160px;
+}
+
+.authContainer h2 { 
+    font-size: 25px;
+    width: 60%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.authContainer form {
+    width: 80%;
+    margin: 0px auto;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.authContainer label {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.authContainer input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.authContainer button {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+/* Tablet Styles (375px - 424px) */
+@media (min-width: 375px) {
+
+}
+
+/* Small Desktop Styles (425px - 767px) */
+@media (min-width: 425px) {
+    .authContainer h2 { 
+        width: 80%;
+    }
+}
+
+/* Medium Desktop Styles (768px - 1023px) */
+@media (min-width: 768px) {
+
+    .authContainer {
+        margin: 60px auto 160px;
+    }
+
+    .authContainer h2 { 
+        font-size: 30px;
+        width: 80%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin: 10px auto;
+    }
+
+    .authContainer label {
+        width: 20%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .authContainer input {
+        width: 50%;
+        margin: auto;
+    }
+    
+    .authContainer button {
+        width: 25%;
+    }
+}
+
+/* Large Desktop Styles (1024px - 1439px) */
+@media (min-width: 1024px) {
+    .authContainer {
+        width: 80%;
+        margin: 100px auto 250px;
+    }
+
+    .authContainer form {
+        width: 70%;
+    }
+
+    .authContainer h2 { 
+        font-size: 36px;
+        margin-bottom: 80px;
+    }
+}
+
+/* Extra Large Desktop Styles (1440px - 1999px) */
+@media (min-width: 1440px) {
+    .authContainer {
+        width: 80%;
+        margin: 120px auto 300px;
+    }
+
+    .authContainer h2 { 
+        font-size: 48px;
+        margin-bottom: 100px;
+    }
+}
+
+/* 2K Desktop and Above Styles (2000px and above) */
+@media (min-width: 2000px) {
+    .authContainer {
+        width: 70%;
+        margin: 150px auto 400px;
+    }
+
+    .authContainer h2 { 
+        font-size: 60px;
+        margin-bottom: 100px;
+    }
+}

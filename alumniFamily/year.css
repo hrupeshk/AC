@@ -1,0 +1,125 @@
+/* year.css */
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 30px;
+    color: black !important;
+    margin: 20px auto !important;
+}
+
+.subHeading h4 {
+    font-size: 16px;
+    text-align: center;
+}
+
+.subHeading a {
+    text-decoration: none;
+    color: black;
+}
+
+.subHeading a:hover {
+    color: #a841ac;
+}
+
+.linkContainer {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: left;
+    margin: 20px auto;
+}
+
+.yearContainer {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.yearContainer button {
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid #a841ac;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    max-width: 200px;
+    height: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.yearContainer button:hover {
+    transform: scale(1.05);
+}
+
+/* Media Queries */
+@media (min-width: 425px) {
+    .container {
+        width: 90%;
+    }
+
+    .subHeading h4 {
+        margin-left: calc(0% - 130px);
+    }
+
+    .yearContainer button {
+        width: 45%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin: 50px auto; 
+    }
+
+    .subHeading h4 {
+        margin-left: calc(0% - 430px);
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+
+    .yearContainer {
+        gap: 20px; 
+    }
+
+    .yearContainer button {
+        font-size: 16px; 
+        height: 60px; 
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 80%; 
+    }
+
+    .subHeading h4 {
+        font-size: 18px;
+        margin-left: calc(0% - 400px);
+    }
+
+    .yearContainer {
+        gap: 20px; 
+    }
+
+    .yearContainer button {
+        font-size: 18px; 
+        height: 60px; 
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .subHeading h4 {
+        margin-left: calc(0% - 850px);
+    }
+}
