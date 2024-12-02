@@ -8,7 +8,7 @@
         $maxAttempts = 200;
         $attempts = 0;
            
-        // Initialize $count to avoid undefined variable warning      
+        // Initialize $count to avoid undefined variable warning  r k 
         $count = 0;
 
         do {
